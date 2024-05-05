@@ -1,6 +1,7 @@
 function calculate() {
     const num1 = parseFloat(document.getElementById("num1").value);
     const num2 = parseFloat(document.getElementById("num2").value);
+    const audio = new Audio();
     const operation = document.getElementById("operation").getAttribute("data-operation");
     let result;
 
@@ -32,4 +33,8 @@ function setOperation(operation) {
     document.getElementById("operation").setAttribute("data-operation", operation);
     calculate();
 }
+
+audio.src ="btn-effect.mp3";
+
+
 
